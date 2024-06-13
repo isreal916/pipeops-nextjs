@@ -66,20 +66,21 @@ export default function Home() {
           {" "}
           <Image style={{}} src={Logo} alt="logo" width={50} />{" "}
         </div>
-        <ul className="flex space-x-4 m-[10px]  ">
+        <ul className="flex space-x-4 self-center  ">
           <li>About</li>
           <li>Features </li>
           <li>Contact</li>
         </ul>
       </header>
       <div className="w-full flex ">
-        <section className="w-[50%] flex flex-col justify-center ml-[40px]">
+        <section className="w-[50%] flex flex-col justify-center ml-[40px] space-y-[15px]">
           <h1 className="font-sans font-semibold text-[45px]  w-[70%]  ">
             Savor the flavor ,know the calories
           </h1>
           <p className="text-[grey] text-[20px] font-sans ">
             Ai powered food image recognition
           </p>
+          <a className="inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-slate-900 text-white hover:bg-slate-700 w-[170px]" href="/components"><span>Try demo <span aria-hidden="true" className="hidden text-slate-400 sm:inline">→</span></span></a>
         </section>
         <section className="w-[50%]">
           {/* <canvas
@@ -91,7 +92,7 @@ export default function Home() {
             }}
             ref={canvasRef}
         /> */}
-          <Image style={{ borderRadius: "20px" }} src={aImage} alt="logo" />
+          <Image style={{  }} src={aImage} alt="logo" />
         </section>
       </div>
     </>
