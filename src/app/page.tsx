@@ -74,9 +74,8 @@ export default function Home() {
       </header>
       <div className="w-full flex ">
         <section className="w-[50%] flex flex-col justify-center ml-[40px] space-y-[15px]">
-          <h1 className="font-sans font-semibold text-[45px]  w-[70%]  ">
-            Savor the flavor ,know the calories
-          </h1>
+         
+          <h1 class="col-start-1 row-start-2 mt-4 max-w-[36rem] text-4xl font-extrabold tracking-tight text-slate-900 sm:text-7xl xl:max-w-[43.5rem]"> Savor the flavor know the calories</h1>
           <p className="text-[grey] text-[20px] font-sans ">
             Ai powered food image recognition
           </p>
@@ -95,6 +94,7 @@ export default function Home() {
           <Image style={{  }} src={aImage} alt="logo" />
         </section>
       </div>
+
     </>
   );
 }
