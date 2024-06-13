@@ -1,7 +1,7 @@
 "use client"
 import Image from 'next/image'
  import Logo from './image-resize.png' 
- import aImage from './ai.png'
+ import aImage from './lapai.jpeg'
  import  { useEffect, useRef, useState } from "react";
  import { NeatConfig, NeatGradient } from "@firecms/neat";
  
@@ -62,10 +62,11 @@ export default function Home() {
  
   return (
     <>
-  <header className=' flex bg-white text-warmBrown font-sans font-semibold w-full justify-around '>
+  <header className=' flex bg-white text-warmBrown font-sans font-semibold w-full justify-between
+   '>
     <div className='m-[10px] flex'>  <Image style={{
-            borderRadius: '50%', 
-          }} src={Logo} alt='logo' width={40} />  <p className='font-mono font-[20px]'>Medmind</p></div>
+            borderRadius: '10%', 
+          }} src={Logo} alt='logo' width={50} /> </div>
     <ul className='flex space-x-4 m-[10px]  ' >
    
     <li>About</li>
@@ -73,9 +74,10 @@ export default function Home() {
     <li>Contact</li>
     </ul>
   </header>
-  <div className='w-full flex'>
-  <section className='w-[50%]'>
-    <h1>Savor the flavor know the calories</h1>
+  <div className='w-full flex '>
+  <section className='w-[50%] flex flex-col justify-center ml-[40px]'>
+    <h1 className='font-sans font-semibold text-[45px]  w-[70%]  '>Savor the flavor ,know the calories</h1>
+    <p className='text-[grey] text-[20px] font-sans '>Ai powered food image recognition</p>
   </section>
   <section className='w-[50%]'>
   {/* <canvas
@@ -87,7 +89,7 @@ export default function Home() {
             }}
             ref={canvasRef}
         /> */}
-         <Image style={{}} src={aImage} alt='logo'  />
+         <Image style={{'borderRadius':'20px'}} src={aImage} alt='logo'  />
   </section>
   </div>
  
