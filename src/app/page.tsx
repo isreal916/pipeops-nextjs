@@ -4,60 +4,10 @@
 import Image from "next/image";
 import Logo from "./image-resize.png";
 import aImage from "./imagein.jpeg";
-import { useEffect, useRef, useState } from "react";
-import { NeatConfig, NeatGradient } from "@firecms/neat";
 
 export default function Home() {
-  const canvasRef = useRef<HTMLCanvasElement | null>(null);
-  const gradientRef = useRef<NeatGradient | null>(null);
-
-  useEffect(() => {
-    if (!canvasRef.current) return;
-
-    gradientRef.current = new NeatGradient({
-      ref: canvasRef.current,
-      colors: [
-        {
-          color: "#cdb4db",
-          enabled: true,
-        },
-        {
-          color: "#ffc8dd",
-          enabled: true,
-        },
-        {
-          color: "#ffafcc",
-          enabled: true,
-        },
-        {
-          color: "#bde0fe",
-          enabled: true,
-        },
-        {
-          color: "#a2d2ff",
-          enabled: false,
-        },
-      ],
-      speed: 5,
-      horizontalPressure: 3,
-      verticalPressure: 3,
-      waveFrequencyX: 2,
-      waveFrequencyY: 4,
-      waveAmplitude: 5,
-      shadows: 0,
-      highlights: 2,
-      colorBrightness: 1,
-      colorSaturation: 3,
-      wireframe: false,
-      colorBlending: 5,
-      backgroundColor: "#003FFF",
-      backgroundAlpha: 1,
-      resolution: 1,
-    });
-
-    return gradientRef.current.destroy;
-  }, [canvasRef.current]);
-
+ 
+ 
   return (
     <>
       <header
