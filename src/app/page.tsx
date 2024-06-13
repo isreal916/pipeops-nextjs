@@ -85,7 +85,7 @@ export default function Home() {
         </section>
         <section className="w-[50%]">
          
-          <Image style={{  }} src={aImage} alt="logo" />
+          <Image  src={aImage} alt="logo" />
         </section>
       </div>
       <div className="flex justify-center bg-white flex-col space-y-4">
