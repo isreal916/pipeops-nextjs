@@ -1,13 +1,17 @@
 import Image from 'next/image'
-
+ import Logo from './image-resize.png'
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Welcome to PipeOps NextJS Demo is here 
-        </p>
-      </div>
-    </main>
+  <header className=' flex bg-white text-warmBrown font-sans font-semibold w-full justify-between '>
+    <div className='rounded-full'> <Image style={{
+            borderRadius: '50%', 
+          }} src={Logo} alt='logo' width={40} /> </div>
+    <ul className='flex space-x-4 m-[10px]  ' >
+    <li className='text-blue'>Home</li>
+    <li>About</li>
+    <li>features   </li>
+    <li>Contact</li>
+    </ul>
+  </header>
   )
 }
