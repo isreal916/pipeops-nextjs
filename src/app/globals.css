@@ -7,4 +7,6 @@ body{
   padding:0;
   display: flex;
   background-color: whitesmoke;
+  flex-direction: column;
+  height:100vh;
 }
