@@ -84,15 +84,7 @@ export default function Home() {
           <a className="inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-slate-900 text-white hover:bg-slate-700 w-[170px]" href="/components"><span>Try demo <span aria-hidden="true" className="hidden text-slate-400 sm:inline">→</span></span></a>
         </section>
         <section className="w-[50%]">
-          {/* <canvas
-            className='h-[200px]'
-            style={{
-                isolation: "isolate",
-                height: "400px",
-                width: "100%",
-            }}
-            ref={canvasRef}
-        /> */}
+         
           <Image style={{  }} src={aImage} alt="logo" />
         </section>
       </div>
