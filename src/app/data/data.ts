@@ -4,7 +4,7 @@ icon :'/check.svg',
 desc: 'Ai-powered technology identifies food items and provides accurate nutritional information '
 },
 {
-  title:'Ntrition insights',
+  title:'Nutrition insights',
   icon:'/flag.svg',
   desc:'get detailed macronutient,and calorie counts to make informed decisions.'
 },
