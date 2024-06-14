@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Logo from "./image-resize.png";
 import aImage from "./imagein.jpeg";
+import { Icon } from "./_component/icon";
 
 export default function Home() {
   return (
@@ -18,7 +19,7 @@ export default function Home() {
         <ul className="flex space-x-4 self-center font-sans mr-[20px] ">
           <li>About</li>
           <li>Features </li>
-          <li>Contact</li>
+          <li> <Icon />Contact</li>
         </ul>
       </header>
       <div className="w-full flex ">
@@ -63,7 +64,7 @@ export default function Home() {
         <div className="feature">
           <section className="">
             <p>hello world</p>
-          <Image src={aImage} alt="image"  />
+          <Image src={aImage} alt="image" width='289' height={245}  />
           </section>
           <section></section>
         </div>
