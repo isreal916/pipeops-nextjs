@@ -4,6 +4,9 @@ import Image from "next/image";
 import Logo from "./image-resize.png";
 import aImage from "./imagein.jpeg";
 import { Icon } from "./_component/icon";
+import { Feature } from "./_component/feature";
+import { data } from "./data/data";
+import { log } from "console";
 
 export default function Home() {
   return (
@@ -52,7 +55,7 @@ export default function Home() {
       </div>
       <div className="flex justify-center bg-white flex-col space-y-4">
         <h4 className=" mt-[80px] max-w-[36rem] text-3xl font-bold  text-slate-900 self-center font-poppins ">
-          {" "}
+          
           Main Feature
         </h4>
         <p className="self-center font-medium font-sans text-[#606060] w-[50rem]">
@@ -62,10 +65,20 @@ export default function Home() {
           needs.
         </p>
         <div className="feature">
-          <section className=" flex flex-wrap w-[600px] h-[452px] space-x-2 space y-2 m-[14px]" >
+          <section className=" flex flex-row w-[600px] h-[452px] space-x-2 space y-2 m-auto" >
+            {
+              data.map(data=>{
+              // console.log(data.title)
+                return(
+                  <Feature title={data.title} icon={data.icon} desc={data.desc}   />
+                )
+
+              })
+            }
          
           </section>
-          <section></section>
+        
+         
         </div>
       </div>
     </>

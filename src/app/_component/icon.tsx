@@ -1,8 +1,11 @@
 import Image from 'next/image';
 
-export const Icon =()=>{
-  
+export const Icon =(Props = {src:'' ,alt :''})=>{
+  let {src,alt} =Props
+ 
   return (
-  <Image src={'/check-circle.svg'} alt='icon' width={200} height={200} />
+    
+  <Image src={src} alt={alt} width={50} height={50} className='bg-[#EBEBEB] rounded-lg' />
+  
   )
 }
