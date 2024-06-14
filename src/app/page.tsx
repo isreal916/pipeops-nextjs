@@ -19,7 +19,7 @@ export default function Home() {
         <ul className="flex space-x-4 self-center font-sans mr-[20px] ">
           <li>About</li>
           <li>Features </li>
-          <li> <Icon />Contact</li>
+          <li> Contact</li>
         </ul>
       </header>
       <div className="w-full flex ">
@@ -62,9 +62,8 @@ export default function Home() {
           needs.
         </p>
         <div className="feature">
-          <section className="">
-            <p>hello world</p>
-          <Image src={aImage} alt="image" width='289' height={245}  />
+          <section className=" flex flex-wrap w-[600px] h-[452px] space-x-2 space y-2 m-[14px]" >
+         
           </section>
           <section></section>
         </div>
