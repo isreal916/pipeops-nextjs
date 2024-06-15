@@ -111,23 +111,26 @@ export default function Home() {
           </div>
         </section>
       </div>
-      <div className="bg-white flex space-x-4 justify-center p-[22px]  "> 
-      <p className="font-extrabold text-[20px] ]">Get started with personalized nutrition and transform your hospitality business</p>
-       <a
-            className="inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-slate-900 text-white hover:bg-slate-700 w-[170px]"
-            href="/medmind"
-          >
-            <span>
-              Get started
-              <span
-                aria-hidden="true"
-                className="hidden text-slate-400 sm:inline"
-              >
-                →
-              </span>
+      <div className="bg-white flex space-x-4 justify-center p-[22px]  ">
+        <p className="font-extrabold text-[20px] ]">
+          Get started with personalized nutrition and transform your hospitality
+          business
+        </p>
+        <a
+          className="inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-slate-900 text-white hover:bg-slate-700 w-[170px]"
+          href="/medmind"
+        >
+          <span>
+            Get started
+            <span
+              aria-hidden="true"
+              className="hidden text-slate-400 sm:inline"
+            >
+              →
             </span>
-          </a>
-        </div>
+          </span>
+        </a>
+      </div>
     </>
   );
 }
