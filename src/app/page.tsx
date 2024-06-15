@@ -25,7 +25,7 @@ export default function Home() {
           <li> Contact</li>
         </ul>
       </header>
-      <div className="w-full flex ">
+      <div className="w-full flex h-[600px] ">
         <section className="w-[50%] flex flex-col justify-center ml-[40px] space-y-[15px]">
           <h1 className="col-start-1 row-start-2 mt-4 max-w-[36rem] text-4xl font-extrabold tracking-tight text-slate-900 sm:text-7xl xl:max-w-[43.5rem]">
             {" "}
@@ -50,10 +50,15 @@ export default function Home() {
           </a>
         </section>
         <section className="w-[50%]">
-          <Image src={aImage} alt="logo" />
+        <video  controls preload="none">
+      <source src="/ai-video.mp4" type="video/mp4" />
+      
+      Your browser does not support the video tag.
+    </video>
+          {/* <Image src={aImage} alt="logo" /> */}
         </section>
       </div>
-      <div className="flex justify-center bg-white flex-col space-y-10">
+      <div className="flex justify-center bg-white flex-col space-y-10 h-[600px]">
         
         <h4 className=" mt-[80px] max-w-[36rem] text-3xl font-bold  text-slate-900 self-center font-poppins ">
           Main Feature
@@ -75,6 +80,12 @@ export default function Home() {
             })}
           </section>
         </div>
+      </div>
+      <div className="flex h-[500px]" style={{border:'2px solid blue'}}>
+      <h4 className="  max-w-[36rem] text-3xl font-bold  text-slate-900 m-auto mt-5 font-poppins ">
+          Benefit
+        </h4>
+
       </div>
     </>
   );
