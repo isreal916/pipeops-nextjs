@@ -49,12 +49,8 @@ export default function Home() {
           </a>
         </section>
         <section className="w-[50%]">
-        <video  autoPlay>
-      <source src="/ai-video.mp4" type="video/mp4" />
-      
-      Your browser does not support the video tag.
-    </video>
-          {/* <Image src={aImage} alt="logo" /> */}
+       
+          <Image src={aImage} alt="logo" />
         </section>
       </div>
       <div className="flex justify-center bg-white flex-col space-y-10 h-[600px]">
