@@ -75,7 +75,7 @@ export default function Home() {
             {data.map((data) => {
               // console.log(data.title)
               return (
-                <Feature title={data.title} icon={data.icon} desc={data.desc} />
+                <Feature key={data.title} title={data.title} icon={data.icon} desc={data.desc} />
               );
             })}
           </section>
