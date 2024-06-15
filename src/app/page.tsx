@@ -10,10 +10,7 @@ import { data } from "./data/data";
 export default function Home() {
   return (
     <>
-      <header
-        className=" flex bg-white text-warmBrown font-sans font-semibold w-full justify-between
-   "
-      >
+      <header className=" flex  text-warmBrown font-sans font-semibold w-full justify-between" >
         <div className="m-[10px] flex">
           {" "}
           <Image style={{}} src={Logo} alt="logo" width={50} />{" "}
@@ -65,8 +62,8 @@ export default function Home() {
           customers who appreciate personalized attention to their nutritional
           needs.
         </p>
-        <div className="feature">
-          <section className=" flex flex-row w-[900px] h-[452px] space-x-2 space y-2 m-auto">
+        <div className="feature p-[22px]">
+          <section className=" flex flex-row w-[900px]  space-x-2 space y-2 m-auto">
             {data.map((data) => {
               // console.log(data.title)
               return (
@@ -76,10 +73,27 @@ export default function Home() {
           </section>
         </div>
       </div>
-      <div className="flex h-[500px]" style={{border:'2px solid blue'}}>
+      <div className="flex h-[500px] flex-col space-y-6 p-[22px]" >
       <h4 className="  max-w-[36rem] text-3xl font-bold  text-slate-900 m-auto mt-5 font-poppins ">
           Benefit
         </h4>
+        <p className="self-center font-medium font-sans text-[#606060] w-[40rem]">
+         Transform Your hospitality business with Medmind,Personalized Nutrition,Improved Efficiency,and Increased revenue
+        </p>
+        <section className="flex space-x-6 justify-center">
+          <div className="bg-white w-[300px] rounded-lg p-[20px] space-y-4">  
+             <h1 className="font-bold">Personalized guest experience</h1>
+             <p>Medmind's Ai-powered technology provides personalized nutrition insights and recommendations,enhancing the guest experience and fostering loyalty</p>
+          </div>
+          <div className="bg-white w-[300px] rounded-lg p-[20px] space-y-4">  
+             <h1 className="font-bold">Improved food safety </h1>
+             <p>MedMind's accurate food recognition and allergen detection  ensure a safer food environment for guests,reducing the risk of food related incident</p>
+          </div>
+          <div className="bg-white w-[300px] rounded-lg p-[20px] space-y-4">  
+             <h1 className="font-bold">Competitive advantage</h1>
+             <p>By offering Medmind's innovative technology hotels and restaurant differntiate themselve from competitors,attracting hrealth conscious guests and enhancing thier brand reputation </p>
+          </div>
+        </section>
 
       </div>
     </>
