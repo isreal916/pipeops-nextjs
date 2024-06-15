@@ -10,7 +10,7 @@ import { data } from "./data/data";
 export default function Home() {
   return (
     <>
-      <header className=" flex  text-warmBrown font-sans font-semibold w-full justify-between" >
+      <header className=" flex  text-warmBrown font-sans font-semibold w-full justify-between">
         <div className="m-[10px] flex">
           {" "}
           <Image style={{}} src={Logo} alt="logo" width={50} />{" "}
@@ -46,16 +46,14 @@ export default function Home() {
           </a>
         </section>
         <section className="w-[50%]">
-       
           <Image src={aImage} alt="logo" />
         </section>
       </div>
       <div className="flex justify-center bg-white flex-col space-y-10 h-[600px]">
-        
         <h4 className=" mt-[80px] max-w-[36rem] text-3xl font-bold  text-slate-900 self-center font-poppins ">
           Main Feature
         </h4>
-        
+
         <p className="self-center font-medium font-sans text-[#606060] w-[50rem]">
           By targeting the hospitality industry MedMind can help establishments
           elevate their service,build brand loyalty,and attract health-conscious
@@ -67,35 +65,69 @@ export default function Home() {
             {data.map((data) => {
               // console.log(data.title)
               return (
-                <Feature key={data.title} title={data.title} icon={data.icon} desc={data.desc} />
+                <Feature
+                  key={data.title}
+                  title={data.title}
+                  icon={data.icon}
+                  desc={data.desc}
+                />
               );
             })}
           </section>
         </div>
       </div>
-      <div className="flex h-[500px] flex-col space-y-6 p-[22px]" >
-      <h4 className="  max-w-[36rem] text-3xl font-bold  text-slate-900 m-auto mt-5 font-poppins ">
+      <div className="flex h-[500px] flex-col space-y-6 p-[22px]">
+        <h4 className="  max-w-[36rem] text-3xl font-bold  text-slate-900 m-auto mt-5 font-poppins ">
           Benefit
         </h4>
         <p className="self-center font-medium font-sans text-[#606060] w-[40rem]">
-         Transform Your hospitality business with Medmind,Personalized Nutrition,Improved Efficiency,and Increased revenue
+          Transform Your hospitality business with Medmind,Personalized
+          Nutrition,Improved Efficiency,and Increased revenue
         </p>
         <section className="flex space-x-6 justify-center">
-          <div className="bg-white w-[300px] rounded-lg p-[20px] space-y-4">  
-             <h1 className="font-bold">Personalized guest experience</h1>
-             <p>Medmind's Ai-powered technology provides personalized nutrition insights and recommendations,enhancing the guest experience and fostering loyalty</p>
+          <div className="bg-white w-[400px] rounded-lg p-[22px] space-y-4">
+            <h1 className="font-bold">Personalized guest experience</h1>
+            <p>
+              Medmind's Ai-powered technology provides personalized nutrition
+              insights and recommendations,enhancing the guest experience and
+              fostering loyalty
+            </p>
           </div>
-          <div className="bg-white w-[300px] rounded-lg p-[20px] space-y-4">  
-             <h1 className="font-bold">Improved food safety </h1>
-             <p>MedMind's accurate food recognition and allergen detection  ensure a safer food environment for guests,reducing the risk of food related incident</p>
+          <div className="bg-white w-[400px] rounded-lg p-[22px] space-y-4">
+            <h1 className="font-bold">Improved food safety </h1>
+            <p>
+              MedMind's accurate food recognition and allergen detection ensure
+              a safer food environment for guests,reducing the risk of food
+              related incident
+            </p>
           </div>
-          <div className="bg-white w-[300px] rounded-lg p-[20px] space-y-4">  
-             <h1 className="font-bold">Competitive advantage</h1>
-             <p>By offering Medmind's innovative technology hotels and restaurant differntiate themselve from competitors,attracting hrealth conscious guests and enhancing thier brand reputation </p>
+          <div className="bg-white w-[400px] rounded-lg p-[22px] space-y-4">
+            <h1 className="font-bold">Competitive advantage</h1>
+            <p>
+              By offering Medmind's innovative technology hotels and restaurant
+              differntiate themselve from competitors,attracting hrealth
+              conscious guests and enhancing thier brand reputation{" "}
+            </p>
           </div>
         </section>
-
       </div>
+      <div className="bg-white flex space-x-4 justify-center p-[22px]  "> 
+      <p className="font-extrabold text-[20px] ]">Get started with personalized nutrition and transform your hospitality business</p>
+       <a
+            className="inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-slate-900 text-white hover:bg-slate-700 w-[170px]"
+            href="/medmind"
+          >
+            <span>
+              Get started
+              <span
+                aria-hidden="true"
+                className="hidden text-slate-400 sm:inline"
+              >
+                →
+              </span>
+            </span>
+          </a>
+        </div>
     </>
   );
 }
