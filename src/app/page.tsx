@@ -6,7 +6,6 @@ import aImage from "./imagein.jpeg";
 import { Icon } from "./_component/icon";
 import { Feature } from "./_component/feature";
 import { data } from "./data/data";
-import { log } from "console";
 
 export default function Home() {
   return (
@@ -50,7 +49,7 @@ export default function Home() {
           </a>
         </section>
         <section className="w-[50%]">
-        <video  controls preload="none">
+        <video  autoPlay>
       <source src="/ai-video.mp4" type="video/mp4" />
       
       Your browser does not support the video tag.
