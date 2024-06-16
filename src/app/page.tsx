@@ -64,7 +64,7 @@ export default function Home() {
         <div className="feature p-[22px]">
           <section className=" flex flex-col sm:flex-row w-[900px]   space-y-2 sm:space-x-2 space y-2 m-auto">
             {data.map((data) => {
-              // console.log(data.title)
+           
               return (
                 <Feature
                   key={data.title}
