@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Logo from "./image-resize.png";
 import aImage from "./imagein.jpeg";
-import { Icon } from "./_component/icon";
+
 import { Feature } from "./_component/feature";
 import { data } from "./data/data";
 
