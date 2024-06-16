@@ -10,10 +10,10 @@ import { data } from "./data/data";
 export default function Home() {
   return (
     <>
-      <header className=" flex  text-warmBrown font-sans font-semibold w-full justify-between">
+      <header className=" flex  text-warmBrown font-sans font-semibold w-full justify-between hidden">
         <div className="m-[10px] flex">
-          {" "}
-          <Image style={{}} src={Logo} alt="logo" width={50} />{" "}
+        
+          <Image style={{}} src={Logo} alt="logo" width={50} className="" />
         </div>
         <ul className="flex space-x-4 self-center font-sans mr-[20px] ">
           <li>About</li>
@@ -21,10 +21,11 @@ export default function Home() {
           <li> Contact</li>
         </ul>
       </header>
+     
       <div className="w-full flex flex-col sm:flex-row h-[600px] ">
-        <section className="w-[50%] flex flex-col justify-center ml-[40px] space-y-[15px]">
+        <section className="w-full sm:w-[50%] flex flex-col justify-center ml-[40px] space-y-[15px]">
           <h1 className="col-start-1 row-start-2 mt-4 max-w-[36rem] text-4xl font-extrabold tracking-tight text-slate-900 sm:text-7xl xl:max-w-[43.5rem]">
-            {" "}
+           
             Savor the flavor know the calories
           </h1>
           <p className="text-[grey] text-[20px] font-sans ">
@@ -45,23 +46,23 @@ export default function Home() {
             </span>
           </a>
         </section>
-        <section className="w-[50%]">
+        <section className="w-full sm:w-[50%]">
           <Image src={aImage} alt="logo" />
         </section>
       </div>
-      <div className="flex justify-center bg-white flex-col space-y-10 h-full sm:h-[600px]">
+      <div className="flex justify-center bg-white flex-col space-y-10 h-auto sm:h-[600px] w-auto">
         <h4 className=" mt-[80px] max-w-[36rem] text-3xl font-bold  text-slate-900 self-center font-poppins ">
           Main Feature
         </h4>
 
-        <p className="self-center font-medium font-sans text-[#606060] w-[50rem]">
+        <p className="self-center font-medium font-sans text-[#606060] max-w-[50rem]">
           By targeting the hospitality industry MedMind can help establishments
           elevate their service,build brand loyalty,and attract health-conscious
           customers who appreciate personalized attention to their nutritional
           needs.
         </p>
         <div className="feature p-[22px]">
-          <section className=" flex flex-col sm:flex-row w-[900px]  space-x-2 space y-2 m-auto">
+          <section className=" flex flex-col sm:flex-row w-[900px]   space-y-2 sm:space-x-2 space y-2 m-auto">
             {data.map((data) => {
               // console.log(data.title)
               return (
@@ -76,15 +77,15 @@ export default function Home() {
           </section>
         </div>
       </div>
-      <div className="flex flex-col sm:flex-row h-[500px] flex-col space-y-6 p-[22px]">
+      <div className="flex  h-[500px] flex-col space-y-6 p-[22px]">
         <h4 className="  max-w-[36rem] text-3xl font-bold  text-slate-900 m-auto mt-5 font-poppins ">
           Benefit
         </h4>
-        <p className="self-center font-medium font-sans text-[#606060] w-[40rem]">
+        <p className="self-center font-medium font-sans text-[#606060] max-w-[40rem]">
           Transform Your hospitality business with Medmind,Personalized
           Nutrition,Improved Efficiency,and Increased revenue
         </p>
-        <section className="flex flex-col sm:flex-row space-x-6 justify-center">
+        <section className="flex flex-col sm:flex-row space-y-6 sm:space-x-6 justify-center">
           <div className="bg-white w-[400px] rounded-lg p-[22px] space-y-4">
             <h1 className="font-bold">Personalized guest experience</h1>
             <p>
@@ -111,7 +112,7 @@ export default function Home() {
           </div>
         </section>
       </div>
-      <div className="bg-white flex space-x-4 justify-center p-[22px]  ">
+      <div className="bg-white flex space-x-4 justify-center p-[22px] w-auto  hidden">
         <p className="font-extrabold text-[20px] ]">
           Get started with personalized nutrition and transform your hospitality
           business
