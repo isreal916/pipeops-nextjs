@@ -111,7 +111,7 @@ export default function Home() {
           </div>
         </section>
       </div>
-      <div className="bg-white flex space-x-4 justify-center p-[22px] w-auto  ">
+      <div className="bg-white flex space-x-4 justify-center p-[22px] w-auto  hidden">
         <p className="font-extrabold text-[20px] ]">
           Get started with personalized nutrition and transform your hospitality
           business
