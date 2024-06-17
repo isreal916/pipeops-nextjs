@@ -54,13 +54,13 @@ export default function Home() {
           Main Feature
         </h4>
 
-        <p className="self-center font-medium font-sans text-[#606060] max-w-[50rem] text-[17px]">
+        <p className="self-center font-medium font-sans text-[#606060] max-w-[50rem] text-[45px] sm:text-[17px]">
           By targeting the hospitality industry MedMind can help establishments
           elevate their service,build brand loyalty,and attract health-conscious
           customers who appreciate personalized attention to their nutritional
           needs.
         </p>
-        <div className="feature p-[22px]">
+        <div className="feature p-[22px] text-[45px] sm:text-[17px]">
           <section className=" flex flex-col sm:flex-row w-[900px]   space-y-2 sm:space-x-2 space y-2 m-auto">
             {data.map((data) => {
            

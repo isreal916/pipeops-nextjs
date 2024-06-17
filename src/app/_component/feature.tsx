@@ -10,8 +10,8 @@ export const Feature = ({title = '',icon = '',desc = ''}) => {
           </div>
         </div>
         <div className="flex flex-col">
-          <div className="title font-bold text-[20px]">{title}</div>
-          <p className="desc w-[15rem]">
+          <div className="title font-bold text-[40px] sm:text-[20px]">{title}</div>
+          <p className="desc  sm:w-[15rem]">
           {desc}
           </p>
         </div>
